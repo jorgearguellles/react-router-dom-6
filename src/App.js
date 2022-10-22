@@ -2,6 +2,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { Menu } from "./Menu";
 import { Home } from "./Home";
 import { BlogPage } from "./BlogPage";
+import { BlogPost } from "./BlogPost";
 import { ProfilePage } from "./ProfilePage";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/profile" element={<ProfilePage />} />
           {/* path="*" Have to be at least */}
           <Route path="*" element={<p>Not found</p>} />
