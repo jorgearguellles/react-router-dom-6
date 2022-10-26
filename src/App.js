@@ -1,6 +1,8 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { Menu } from "./Menu";
 import { Home } from "./Home";
+import { LoginPage } from "./LoginPage";
+import { LogoutPage } from "./LogoutPage";
 import { BlogPage } from "./BlogPage";
 import { BlogPost } from "./BlogPost";
 import { ProfilePage } from "./ProfilePage";
@@ -17,6 +19,8 @@ function App() {
             <Route path=":slug" element={<BlogPost />} />
           </Route>
 
+          <Route path="/logout" element={<LogoutPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/profile" element={<ProfilePage />} />
 
           {/* path="*" Have to be at least */}
