@@ -3,7 +3,7 @@ import { useAuth } from "./auth";
 
 export const LoginPage = () => {
   const auth = useAuth();
-  const [username, setUsername] = useState();
+  const [username, setUsername] = useState("");
 
   const loginSubmit = (e) => {
     e.preventDefault();
